@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
 const String SUPABASE_URL = 'https://gedktetsmhwhtdcharyf.supabase.co';
-// ⚠️ Pega aquí tu anon key: Settings > API Keys > Legacy anon > Copy
 const String SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImdlZGt0ZXRzbWh3aHRkY2hhcnlmIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTEyNDQ0NDIsImV4cCI6MjEwNjgyMDQ0Mn0.oOZ9xdrwITGp_CQEAxn6neyMcw6E9K4H-1V6VisP5xw';
 
 void main() async {
@@ -22,6 +21,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Tareas con Supabase',
       theme: ThemeData(primarySwatch: Colors.blue),
       home: const AuthWrapper(),
